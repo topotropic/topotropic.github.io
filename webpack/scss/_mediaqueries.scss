@@ -5,12 +5,14 @@
 
 @media all and (min-width: 601px) and (max-width: 800px) {
     header {
-        padding: ms(5) ms(0) ms(8) ms(5);
+        padding: ms(5) ms(0) ms(8) ms(2);
     }
     .page {
         padding-right: ms(2);
         img {
             width: 100%;}
+        h2 {
+            font-size: ms(4);}
         p, h1, h2, h3, h4, li, small, .pagination {
             margin-left: ms(6);
         }
