@@ -1,0 +1,39 @@
+<!doctype html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{{
+  '/static/gen/styles.css'|asseturl }}">
+<script type=text/javascript src="{{
+  '/static/gen/app.js'|asseturl }}" charset="utf-8"></script>
+<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:400,300,800' rel='stylesheet' type='text/css'>
+<title>{% block title %}Welcome{% endblock %} — topotropic</title>
+{% block extrahead %}{% endblock %}
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1><a href="{{ '/blog'}}">Nicole Weber</a></h1>
+
+      <!--<h1><a href="{{ '/'|url }}">Nicole Weber</a></h1>-->
+      <nav>
+        <ul class="nav navbar-nav">
+          <li{% if this._path == '/' %} class="active"{% endif
+            %}></li>
+          {% for href, title in [
+            ['/blog', 'Blog'],
+            ['/about', 'About'],
+          ] %}
+            <li{% if this.is_child_of(href) %} class="active"{% endif
+              %}><a href="{{ href|url }}">{{ title }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </header>
+    <div class="page">
+      {% block body %}{% endblock %}
+    </div>
+    <footer>
+    </footer>
+  </div>
+</body>

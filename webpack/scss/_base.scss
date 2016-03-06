@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+    background: $berry; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient($berry, $yellow, $blue); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient($berry, $yellow, $blue); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient($berry, $yellow, $blue); /* For Firefox 3.6 to 15 */
+    background: linear-gradient($berry, $yellow, $blue); /* Standard syntax */
+    color: $black;
+    font-size: $base-font-size;
+    font-family: $base-font-family;
+    font-weight: normal;
+    line-height: $base-line-height;
+    //-moz-osx-font-smoothing: grayscale;
+  
+    /* setup OpenType features */
+    font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "onum" 1;
+    text-transform: none;
+
+    /* vendor prefixes */
+    -webkit-font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "onum" 1;
+    -moz-font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "onum" 1;
+    -moz-font-feature-settings: "kern=1, liga=1, pnum=1, onum=1";
+    -ms-font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "onum" 1;
+    -o-font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "onum" 1;
+}
+
+header {
+    max-width: 1024px;
+    padding: ms(5) ms(0) ms(8) ms(8);
+    h1 {
+        float: left;}
+    nav { 
+        float: right;}}
+
+.page {
+    clear: both;
+    max-width: 800px;
+    img {
+        margin-left: ms(-20);
+        width: 120%;
+        height: auto;
+        padding-bottom: ms(0);}
+    p, h1, h2, h3, h4, li, small, .pagination {
+        margin-left: ms(10);
+    }
+    blockquote p {
+        margin-left: ms(9);}
+    }
+
+.wrapper {
+    background: $white;
+    max-width: 100%; }
+
+footer {
+    background-color: #fcfcfc;
+    height: auto;
+    min-height: 400px;
+    width: 100%;}
+
+ul {
+    &.nav {
+        @include horizontal-list;}
+    }
+
+::-moz-selection { /* Code for Firefox */
+    color: $black;
+    background: $yellow; /* For browsers that do not support gradients */
+}
+
+::selection {
+    color: $black; 
+    background: $yellow; /* For browsers that do not support gradients */
+}
+
+.blog-post {
+    margin-bottom: ms(5);
+}
+
+ul {
+    padding-left: ms(3);
+    li{
+        margin-left: ms(3);
+    }
+}
