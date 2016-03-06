@@ -1,9 +1,0 @@
-[project]
-name = topotropic
-
-[packages]
-lektor-webpack-support = 0.1
-
-
-[servers.ghpages]
-target = ghpages://topotropic/topotropic.github.io
