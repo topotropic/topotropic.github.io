@@ -4,7 +4,7 @@ h1, h2, h3 a, h4, p, nav, ul, blockquote {
 	font-weight: normal;
 }
 
-header h1, nav ul li{
+header h1, nav ul li {
 	font-size: ms(0);
 	padding-bottom: 0;}
 
@@ -40,10 +40,12 @@ blockquote {
 	-webkit-background-clip: text;}
 
 .small {
-	font-size: ms(-1);
-	padding-bottom: ms(0);}
+	font-size: ms(-1);}
 
-p, ul, h4, h2, hr {
+p, ul, h4, h2 {
+	padding-bottom: ms(1);}
+
+hr {
 	margin-bottom: ms(1);}
 
 a {
