@@ -6,4 +6,4 @@ lektor-webpack-support = 0.1
 
 
 [servers.ghpages]
-target = ghpages+https://topotropic/topotropic.github.io
+target = ghpages+https://topotropic/topotropic.github.io?cname=topotropic.com
