@@ -1,1 +1,8 @@
 _model: blog
+
+---
+title: The Page Title
+---
+body:
+
+The page body goes here

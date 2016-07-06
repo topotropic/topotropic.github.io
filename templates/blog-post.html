@@ -3,4 +3,61 @@
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
   {{ render_blog_post(this) }}
+    <div class="svg-wrap">
+        <svg width="64" height="64" viewBox="0 0 64 64">
+            <path id="arrow-left" d="M46.077 55.738c0.858 0.867 0.858 2.266 0 3.133s-2.243 0.867-3.101 0l-25.056-25.302c-0.858-0.867-0.858-2.269 0-3.133l25.056-25.306c0.858-0.867 2.243-0.867 3.101 0s0.858 2.266 0 3.133l-22.848 23.738 22.848 23.738z" />
+        </svg>
+        <svg width="64" height="64" viewBox="0 0 64 64">
+            <path id="arrow-right" d="M17.919 55.738c-0.858 0.867-0.858 2.266 0 3.133s2.243 0.867 3.101 0l25.056-25.302c0.858-0.867 0.858-2.269 0-3.133l-25.056-25.306c-0.858-0.867-2.243-0.867-3.101 0s-0.858 2.266 0 3.133l22.848 23.738-22.848 23.738z" />
+        </svg>
+    </div>
+
+    {% set siblings = this.get_siblings() %}
+    {% set older = siblings.next_page %}
+    {% set newer = siblings.prev_page %}
+
+    <script>
+        {% if older %}
+            function leftArrowPressed() {
+                window.location.href="{{ older|url }}";
+            }
+        {% endif %}
+        {% if newer %}       
+            function rightArrowPressed() {
+                window.location.href="{{ newer|url }}";
+            }
+        {% endif %}
+
+        document.onkeydown = function(evt) {
+            evt = evt || window.event;
+            switch (evt.keyCode) {
+                {% if older %}   
+                    case 37:
+                        leftArrowPressed();
+                        console.log("older")
+                        break;
+                {% endif %}
+                {% if newer %}
+                    case 39:
+                        rightArrowPressed();
+                        break;
+                {% endif %}
+                }
+        };
+    </script>
+
+    {% if older %}
+        <nav class="nav-article prev">
+            <a id="prev_page" href="{{ older|url }}" >
+                <svg class="icon" width="32" height="32" viewBox="0 0 64 64"><use xlink:href="#arrow-left"></svg>
+            </a>
+        </nav>
+    {% endif %}
+    {% if newer %}
+        <nav class="nav-article next">  
+            <a id="next_page" href="{{ newer|url }}">
+                <svg class="icon" width="32" height="32" viewBox="0 0 64 64"><use xlink:href="#arrow-right"></svg>
+            </a>   
+        </nav>
+    {% endif %}
 {% endblock %}

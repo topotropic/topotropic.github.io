@@ -1,13 +1,39 @@
-@media all and (min-width: 801px) {
+@media all and (min-width: 901px) {
     .wrapper {
         margin: 0 0 0 ms(1);}
+
+    .nav-article {
+        position: fixed;
+        bottom: 120px;
+        &.next {
+            left: 880px;
+            padding: 20px 20px 10px;
+            background: rgba(190,190,190,0.5);
+            a .icon {
+                fill: $grey;
+                &:hover {
+                    fill: $berry;
+                }
+            }
+        }
+        &.prev {
+            padding: 20px 20px 10px 10px;
+            background: rgba(190,190,190,0.5);
+            a .icon {
+                fill: $grey;
+                &:hover {
+                    fill: $berry;
+                }
+            }
+        }
+    }
 }
 
-@media all and (min-width: 601px) and (max-width: 800px) {
+@media all and (min-width: 601px) and (max-width: 900px) {
     header {
         padding: ms(5) ms(0) ms(8) ms(2);
     }
-    .page {
+    .page {    
         padding-right: ms(2);
         img {
             width: 100%;}
@@ -22,6 +48,12 @@
         .wrapper {
             margin: 0 0 0 ms(1);
         } 
+    .nav-article {
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        overflow: hidden;
+    }
 }
 @media all and (max-width: 600px) {
     ul {
@@ -43,7 +75,14 @@
             margin-left: ms(-3);}
         }
     .wrapper {
-        margin: 0 0 0 ms(-7);}}
+        margin: 0 0 0 ms(-7);}
+    .nav-article {
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        overflow: hidden;
+    }
+}
 
 
 

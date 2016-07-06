@@ -4,12 +4,24 @@
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
 
+  {% set tags = site.query('/blog').distinct('tags') %}
+
+ <!--
+  {% if tags %}
+    <ul>
+      {% for tag in tags|sort %}
+        <li><a href="{{ tag }}">{{ tag }}</a></li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+  -->
+
   {% for child in this.pagination.items %}
     {{ render_blog_post(child, from_index=true) }}
   {% endfor %}
 
-{% if this.pagination.total > 10 %}
-  {{ render_pagination(this.pagination) }}
-{% endif %} 
+  {% if this.pagination.total > 10 %}
+    {{ render_pagination(this.pagination) }}
+  {% endif %} 
 
 {% endblock %}

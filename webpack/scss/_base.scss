@@ -87,3 +87,11 @@ ul {
         margin-left: ms(3);
     }
 }
+
+
+.svg-wrap {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+}
