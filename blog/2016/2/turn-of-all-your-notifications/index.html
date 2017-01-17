@@ -2,8 +2,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../../static/gen/styles.css?h=b8af46d1">
-<script type=text/javascript src="../../static/gen/app.js?h=56f85b4f" charset="utf-8"></script>
+
+<link rel="stylesheet" href=
+"../../../../static/gen/styles.css?h=4369e0db">
+<!--<link rel="stylesheet" href="../../../../static/gen/styles.css?h=4369e0db">-->
+<script type=text/javascript src="../../../../static/gen/app.js?h=56f85b4f" charset="utf-8"></script>
 <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:400,300,800' rel='stylesheet' type='text/css'>
 <title>Turn off all your notifications — topotropic</title>
 
@@ -28,29 +31,31 @@
   <div class="wrapper">
     <header>
       <h1><a href="/blog">Nicole Weber</a></h1>
-
-      <!--<h1><a href="../../">Nicole Weber</a></h1>-->
+      <!--<h1><a href="../../../../">Nicole Weber</a></h1>-->
       <nav>
         <ul class="nav navbar-nav">
           <li></li>
           
-            <li class="active"><a href="../../blog/">Blog</a></li>
+          <li class="active"><a href="../../../../blog/">Blog</a></li>
           
-            <li><a href="../../about/">About</a></li>
+          <li><a href="../../../../library/">Library</a></li>
+          
+          <li><a href="../../../../about/">About</a></li>
           
         </ul>
       </nav>
     </header>
-    <div class="page">
       
+    <div class="page">
+
   
   <div class="blog-post">
-  <p class="small">2016-02-27</p>
 
-  
+    <p class="small">2016-02-27</p>
 
-    <h2>Turn off all your notifications</h2>
-    <p>Books that take a critical look at how we use social media and its impact. 
+    
+        <h2>Turn off all your notifications</h2>
+        <p>Books that take a critical look at how we use social media and its impact. 
 Excerpts from a book review by Jacob Weisberg.</p>
 <blockquote><p>But the more you read about it, the more you may come to feel that we’re in the middle of a new Opium War, in which marketers have adopted addiction as an explicit commercial strategy. This time the pushers come bearing candy-colored apps.</p>
 <p>Turkle comments that digital media put people in a “comfort zone,” where they believe they can share “just the right amount” of themselves. But this feeling of control is an illusion—a “Goldilocks fallacy.” In a romantic relationship, there is no ideal distance to be maintained over time. As she sums up her case: “Technology makes us forget what we know about life.”</p>
@@ -73,21 +78,69 @@ by Nir Eyal with Ryan Hoover<br>
 Portfolio, 242 pp., $25.95</p>
 <p><a href="http://www.nybooks.com/articles/2016/02/25/we-are-hopelessly-hooked/">http://www.nybooks.com/articles/2016/02/25/we-are-hopelessly-hooked/</a></p>
 
-
-  
-
- <!--  <p class="meta">
-    written by
     
-      
-    
-    on  2016-02-27
-  </p>-->
-
   </div>
 
 
+    <div class="svg-wrap">
+        <svg width="64" height="64" viewBox="0 0 64 64">
+            <path id="arrow-left" d="M46.077 55.738c0.858 0.867 0.858 2.266 0 3.133s-2.243 0.867-3.101 0l-25.056-25.302c-0.858-0.867-0.858-2.269 0-3.133l25.056-25.306c0.858-0.867 2.243-0.867 3.101 0s0.858 2.266 0 3.133l-22.848 23.738 22.848 23.738z" />
+        </svg>
+        <svg width="64" height="64" viewBox="0 0 64 64">
+            <path id="arrow-right" d="M17.919 55.738c-0.858 0.867-0.858 2.266 0 3.133s2.243 0.867 3.101 0l25.056-25.302c0.858-0.867 0.858-2.269 0-3.133l-25.056-25.306c-0.858-0.867-2.243-0.867-3.101 0s-0.858 2.266 0 3.133l22.848 23.738-22.848 23.738z" />
+        </svg>
     </div>
+
+    
+    
+    
+
+    <script>
+        
+            function leftArrowPressed() {
+                window.location.href="../../../../blog/2016/2/needs-more-love/";
+            }
+        
+               
+            function rightArrowPressed() {
+                window.location.href="../../../../blog/2016/2/dont-do-it-alone/";
+            }
+        
+
+        document.onkeydown = function(evt) {
+            evt = evt || window.event;
+            switch (evt.keyCode) {
+                   
+                    case 37:
+                        leftArrowPressed();
+                        console.log("older")
+                        break;
+                
+                
+                    case 39:
+                        rightArrowPressed();
+                        break;
+                
+                }
+        };
+    </script>
+
+    
+        <nav class="nav-article prev">
+            <a id="prev_page" href="../../../../blog/2016/2/needs-more-love/" >
+                <svg class="icon" width="32" height="32" viewBox="0 0 64 64"><use xlink:href="#arrow-left"></svg>
+            </a>
+        </nav>
+    
+    
+        <nav class="nav-article next">  
+            <a id="next_page" href="../../../../blog/2016/2/dont-do-it-alone/">
+                <svg class="icon" width="32" height="32" viewBox="0 0 64 64"><use xlink:href="#arrow-right"></svg>
+            </a>   
+        </nav>
+    
+    </div>
+
     <footer>
     </footer>
   </div>
