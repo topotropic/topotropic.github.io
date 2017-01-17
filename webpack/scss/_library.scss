@@ -1,0 +1,27 @@
+.library {
+    clear: both;
+    max-width: 1200px;
+    padding-right: ms(2);
+    a {
+        text-decoration: none;
+        img:hover {
+            filter: grayscale(0%);
+        }    
+    }
+    img {
+        width: 90%;
+        filter: grayscale(50%);
+        padding-bottom: 0;
+    }
+    ul {
+        display: flex; /*or inline-flex*/
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+    li {
+        width: 30%;
+        list-style-type:none;
+        padding: 0px;
+        margin: 10px;
+    }
+}

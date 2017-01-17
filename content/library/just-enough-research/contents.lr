@@ -1,0 +1,133 @@
+title: Just Enough Research
+---
+author: Erika Hall
+---
+body:
+
+Chapter 1: Enough is Enough
+
+> What does the failure of the Segway have to teach design research? That where humans are concerned, context is everything.
+
+> Design research both inspires imagination and informs intuition through a variety of methods with related intents: to expose patterns underlying the rich reality of people’s behaviors and experiences, to explore reactions to probes and prototypes, and to shed light on the unknown through iterative hypothesis and experiment.
+
+> But the concept of “liking” is as subjective as it is empty. It is a superficial and self-reported mental state unmoored from any particular behavior. This means you can’t get any useful insights from any given individual reporting that they like or hate a particular thing. I like horses, but I’m not going to buy any online.
+
+> Research is just another name for critical thinking. With a little encouragement, everyone on your team can open their minds and embrace it.
+
+--
+
+Chapter 2: The Basics
+
+> If you work with other people, involve them from the start. Presenting them with the world’s most stunning report will give them a terrific reference document, but it’s far less likely to inspire them to approach their work differently
+
+> The most important thing is that everyone involved knows the purpose or goal of the research, their role, and the process.
+
+> Research is a set of tools. We want to make sure we can find the right one fast, but we aren’t too concerned with the philosophy of how the toolbox is organized.
+
+> To choose the best research tool for your project, you’ll need to know what decisions are in play (the purpose) and what you’re asking about (the topic).
+
+> - Generative or exploratory research: “What’s up with...?“
+- Descriptive and explanatory: “What and how?“
+- Evaluative research: “Are we getting close?“
+- Causal research: “Why is this happening?“, Causal research often includes looking at analytics and conducting multivariate testing
+
+> Nothing slows down design and development projects as much as arguing over personal opinions or wasting effort solving the wrong problem.
+
+> Design happens in context. And research is simply understanding that context.
+
+> If you have ready access to the customer service representatives, talk to them. (...) It’s very helpful to have a clear idea of how product and marketing decisions are made in your company
+
+> The agile manifesto explicitly values “responding to change over following a plan.” Design is planning. However, any work with complex ideas and dependencies requires holding some ideas outside the development process. You can’t cave in completely to the seductive solipsism that agile offers, or you’ll be tunneling efficiently and collaboratively toward the center of the earth. While flexibility and responsiveness are certainly virtues that many project teams could use more of, let’s not discount the importance of having some sort of plan.
+
+> In other words, focus only on the essential user types, deal with your data as soon as you get it, involve your team in the analysis, and do the less important stuff later.
+
+> Awareness of your own limits will allow you to be as effective as possible within them.
+
+> To make the best use of your time and truly do just enough research, try to identify your highest-priority questions—your assumptions that carry the biggest risk. Ask this question: given our stated business goals, what potential costs do we incur—what bad thing will happen—if, six months from now, we realize...
+
+> That said, one way to know you’ve done enough research is to listen for the satisfying click. That’s the sound of the pieces falling into place when you have a clear idea of the problem you need to solve and enough information.
+
+--
+
+The Process
+
+> Good recruiting puts the quality in your qualitative research.
+
+> (Usability Testing) You shouldn’t even think of it as a separate activity, just another type of review to ensure you’re meeting that set of needs. Business review. Design review. Technical review. Usability review.
+
+> A usability lab gives you the illusion of control when what you are trying to find out is how well your ideas work in the wild. You want unpredictability. You want screaming children in the background, you want glare and interruptions and distractions.
+
+--
+
+User Research
+
+> You do user research to identify patterns and develop empathy. 
+Understand the true needs and priorities of your customers/readers/target audience/end users.
+Understand the context in which your users will interact with what you’re designing.
+Replace assumptions about what people need and why with actual insight.
+Create a mental model of how the users see the world.
+Create design targets (personas) to represent the needs of the user in all decision-making.
+Hear how real people use language to develop the voice of the site/application.“
+
+> ASSUMPTIONS ARE INSULTS – By designing for yourself or your team, you are potentially building discrimination right into your product.
+
+> Everybody lies – most people are poor reporters or predictors of their own preferences and behavior when presented with speculative or counterfactual scenarios in the company of others.
+
+> Radically simplified, the fundamental question of ethnography is, “What do people do and why do they do it?” In the case of user research, we tack on the rider “...and what are the implications for the success of what I am designing?“
+
+> Think of them as the world’s foremost expert on themselves, which is the all-absorbing matter at hand.
+
+> Your questions are just prompts to help the participant tell you a story that reveals situations, attitudes, and behaviors you didn’t even think to ask about.“
+
+--
+
+Competitive Research
+
+> Your competition is Facebook, Apple, Twitter, the Haus of Gaga, Hulu, Wikipedia, a freaky Japanese YouTube channel, all of Google, everyone who ever had an idea for a startup, the nosey neighbor who offers unsolicited advice, the hot teaching assistant, all the people at the dog park, mom, dad, sloth, inertia, insecurity, fear, corporate bureaucracy, sunk infrastructure costs, memory lapses, duct tape, bubble gum, ADD, marijuana (medical or otherwise), the sofa, some hacker in Serbia you’ve never heard of, what all the kids are doing these days, what mother never told you, some modern Chinese secrets...and more!
+
+> When you look at what your competitors are doing, you only see what is visible on the outside, unless you have a mole. That’s what your users see as well, so user research won’t help you here. It will take some deeper digging, critical thinking, and extrapolation to determine (or make a good guess at) why your competitor is doing things a certain way.
+
+
+> Here are the questions you need to ask about your brand:
+- Attributes: which characteristics do you want people inside and outside the company to associate with the brand or product, and which do you want to avoid?
+- Value proposition: what does your product or service offer that others do not and how does your brand communicate this?
+- Customer perspective: when you conduct ethnographic interviews with existing or potential customers, what associations do they have with your brand?“
+
+--
+
+Evaluative Research
+
+> Heuristic Analysus – The method is very simple: evaluators (at least two or three, ideally) individually go through a site or application with a checklist of principles in hand and score the site for each one. (...) It’s a quick and cheap (...) It’s a good way to deal with obvious issues in early prototypes before bringing in users. (...) It focuses on the system itself rather than the relationship between the user and the system.
+
+> According to Nielsen (http://bkaprt.com/jer/18/), usability is a quality attribute defined by five components:
+- Learnability: how easy is it for users to accomplish basic tasks the first time they come across the design?
+- Efficiency: once users have learned the design, how quickly can they perform tasks?
+- Memorability: when users return to the design after a period of not using it, how easily can they reestablish proficiency?
+- Errors: how many errors do users make, how severe are these errors, and how easily can they recover from the errors?
+- Satisfaction: how pleasant is it to use the design?“
+
+> Cheap tests first, expensive tests later
+
+> How bad and how often? Rate each problem users encountered during the test on each of the following two scales: severity and frequency.
+
+
+--
+
+Analysis and Models
+
+> if you work collaboratively that clarity and deep understanding will be shared.
+
+> Any models or maps you create will simply serve as documentation of what everyone already knows.“
+
+--
+
+Quantitative Research
+
+> Optimizing a design is the chief aim of quantitative research and analysis
+
+> You always need to answer “Why?” before asking “How?” And you need good answers for both.
+
+
+
+---
+read_date: 2016-04-10

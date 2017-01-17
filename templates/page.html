@@ -4,9 +4,13 @@
 {% block extrahead %}
 {% if this.path == '/' %}
 <meta http-equiv="refresh" content="0; url={{ '/blog'|url }}" />
-{% endif %}
+
+ {% endif %}
 {% endblock %}
 
 {% block body %}
+    <div class="page">
+
   {{ this.body }}
+  </div>
 {% endblock %}

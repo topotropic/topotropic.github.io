@@ -1,6 +1,24 @@
 @media all and (min-width: 901px) {
+    header {
+        padding: ms(5) ms(0) ms(8) ms(8);
+    }
     .wrapper {
         margin: 0 0 0 ms(1);}
+    h2 {
+        font-size: ms(6);
+    }
+    .page {    
+        img {
+            margin-left: ms(-20);
+            width: 120%;
+            height: auto;
+            padding-bottom: ms(0);}
+        p, h1, h2, h3, h4, li, small, .pagination, hr {
+            margin-left: ms(10);
+        }
+        blockquote p {
+            margin: 0 ms(4) 0 ms(9);}
+    }
 
     .nav-article {
         position: fixed;
@@ -25,6 +43,12 @@
                     fill: $berry;
                 }
             }
+        }
+    }
+
+    .library {
+        li {
+            width: 15%;
         }
     }
 }
@@ -54,28 +78,33 @@
         height: 0px;
         overflow: hidden;
     }
-}
-@media all and (max-width: 600px) {
-    ul {
-        li{
-            margin-left: ms(-3);
+    .library {
+        li {
+            width: 20%;
         }
     }
-    header {
-        padding: ms(5) ms(0) ms(8) ms(0);}
-    h2 {
-        font-size: ms(4);}
-    .page {
-        padding-right: ms(2);
-        img {
-            width: 100%;}
-        p, h1, h2, h3, h4, li, small, .pagination, blockquote p {
-            margin-left: ms(0);}
-        blockquote p {
-            margin-left: ms(-3);}
-        }
-    .wrapper {
-        margin: 0 0 0 ms(-7);}
+}
+@media all and (max-width: 600px) {
+    // ul {
+    //     li{
+    //         margin-left: ms(-3);
+    //     }
+    // }
+    // header {
+    //     padding: ms(5) ms(0) ms(8) ms(0);}
+    // h2 {
+    //     font-size: ms(4);}
+    // .page {
+    //     padding-right: ms(2);
+    //     img {
+    //         width: 100%;}
+    //     p, h1, h2, h3, h4, li, small, .pagination, blockquote p {
+    //         margin-left: ms(0);}
+    //     blockquote p {
+    //         margin-left: ms(-3);}
+    //     }
+    // .wrapper {
+    //     margin: 0 0 0 ms(-7);}
     .nav-article {
         position: absolute;
         width: 0px;
@@ -83,6 +112,3 @@
         overflow: hidden;
     }
 }
-
-
-

@@ -3,7 +3,6 @@
 
     <p class="small">{{ post.pub_date }}</p>
 
-    {% if from_index %}
       {% if post.read_on %}
         <h3><a href="{{ post|url }}">{{ post.title }}</a></h3>
         {{ post.teaser }}
@@ -12,10 +11,23 @@
         <h3>{{ post.title }}</h3>
         {{ post.teaser }}
       {% endif %}
-    {% else %}
-        <h2>{{ post.title }}</h2>
-        {{ post.body }}
-    {% endif %}
-  </div>
 
+  </div>
+  
 {% endmacro %}
+
+
+
+  {% set tags = site.query('/blog').distinct('tags') %}
+  {% if tags %}
+    <ul>
+      {% for tag in tags|sort %}
+        <li><a href="tags/{{ tag }}">{{ tag }}</a></li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+
+  1. Click on tag
+  2. Open new page that lists all entries with the specified tag
+  3.  

@@ -1,12 +1,12 @@
 {% extends "layout.html" %}
-{% from "macros/blog.html" import render_blog_post %}
+{% from "macros/library.html" import render_book %}
 {% from "macros/pagination.html" import render_pagination %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
 
-  <div class="page">
-<!-- 
-  {% set tags = site.query('/blog').distinct('tags') %}
+<div class="library">
+
+<!--   {% set tags = site.query('/library').distinct('tags') %}
   {% if tags %}
     <ul>
       {% for tag in tags|sort %}
@@ -15,15 +15,17 @@
     </ul>
   {% endif %} -->
 
-
+  <ul>
   {% for child in this.pagination.items %}
-    {{ render_blog_post(child, from_index=true) }}
-  {% endfor %}
 
+    {{ render_book(child, from_index=true) }}
+
+  {% endfor %}
+  </ul>
   {% if this.pagination.total > 10 %}
     {{ render_pagination(this.pagination) }}
   {% endif %} 
-  </div>
+<div>
 
 {% endblock %}
 

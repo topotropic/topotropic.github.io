@@ -1,0 +1,61 @@
+{% macro render_book(book, from_index=false) %}
+  
+
+  {% if from_index %}
+    <li>
+    {% if book.read_on %}
+      <a href="{{ book|url }}">
+
+      {% set image = book.attachments.images.first() %}
+      {% if image %}
+        <img class="book" src="{{ image.thumbnail(320)|url }}" alt="">
+      {% endif %}
+      {{ book.title }}  <br/><span class="small"> {{ book.author }}</span>      
+      <p class="small">{{ book.read_date.strftime ('%m/%Y')}}</p>
+</a>
+
+    </li>
+    {% else %}
+          {% set image = book.attachments.images.first() %}
+      {% if image %}
+        <img class="book" src="{{ image.thumbnail(320)|url }}" alt="">
+      {% endif %}
+      {{ book.title }} <br/> <span class="small"> {{ book.author }}</span>
+      <p class="small">{{ book.read_date.strftime ('%m/%Y')}}</p>
+
+    {% endif %}
+
+  {% else %}
+    <div class="page">
+        <h3>{{ book.title }} </h3><h4>by {{ book.author }}</h4>
+        {{ book.body }}
+      </div>
+  {% endif %}  
+
+<!--     <p class="small">{{ book.read_date }}123</p>
+
+  {% if from_index %}
+
+    {% if book.read_on %}
+      {% set image = book.attachments.images.first() %}
+      {% if image %}
+        <img class="book" src="{{ image.thumbnail(320)|url }}" alt="">
+      {% endif %}
+      <h4><a href="{{ book|url }}">{{ book.title }} by {{ book.author }}</a></h4>
+        {{ book.teaser }}
+        <p><a href="{{ book|url }}">Read on</a></p>
+    {% else %}
+
+        <h3>{{ book.title }} by {{ book.author }}</h3>
+        {{ book.teaser }}
+
+    {% endif %}
+    
+    {% else %}
+        <h2>{{ book.title }} by {{ book.author }}</h2>
+        {{ book.body }}
+
+  {% endif %}
+ -->
+
+{% endmacro %}
