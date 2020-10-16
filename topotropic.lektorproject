@@ -2,7 +2,7 @@
 name = topotropic
 
 [packages]
-lektor-webpack-support = 0.1
+lektor-webpack-support = 0.5
 
 [servers.ghpages]
 target = ghpages+https://topotropic/topotropic.github.io?cname=topotropic.com
