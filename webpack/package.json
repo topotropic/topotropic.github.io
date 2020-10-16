@@ -1,4 +1,6 @@
 {
+  "name": "topotropic.com",
+  "version": "1.0.0",
   "private": true,
   "devDependencies": {
     "babel-core": "^6.4.5",

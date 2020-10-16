@@ -3,7 +3,7 @@ var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 
-module.exports = {
+var options = {
     entry: {
         'app': './js/main.js',
         'styles': './scss/main.scss',
@@ -20,26 +20,26 @@ module.exports = {
     },
     module: {
         loaders: [
-        { 
-            test: /\.js$/, 
-            exclude: /node_modules/, 
-            loader: 'babel-loader' 
+        {
+            test: /\.js$/,
+            exclude: /node_modules/,
+            loader: 'babel-loader'
         },
-        { 
-            test: /\.scss$/, 
-            loader: ExtractTextPlugin.extract('style-loader', 'css-loader!sass-loader') 
+        {
+            test: /\.scss$/,
+            loader: ExtractTextPlugin.extract('style-loader', 'css-loader!sass-loader')
         },
-        { 
-            test: /\.css$/, 
-            loader: ExtractTextPlugin.extract('style-loader', 'css-loader') 
+        {
+            test: /\.css$/,
+            loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
         },
-        { 
-            //test: /\.(woff2?|ttf|eot|svg|png|jpe?g|gif)$/, 
-            //loader: 'file' 
+        {
+            //test: /\.(woff2?|ttf|eot|svg|png|jpe?g|gif)$/,
+            //loader: 'file'
 
             test: /\.(eot|svg|ttf|woff|woff2)$/,
             loader: 'file?name=[name].[ext]'
- 
+
         }
         ]
     },
@@ -48,6 +48,8 @@ module.exports = {
         allChunks: true
     }),
     new webpack.optimize.UglifyJsPlugin(),
+    new webpack.optimize.DedupePlugin()
     ]
 };
 
+module.exports = options;
